@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>TEC Soluciones</title>
+</head>
+<body>
+    <header class="cabecera">
+        <nav>
+            <!-- <a href="../index.html"><img src="../assets/icons/teclogo.png" alt="logo-tec" width="100px"></a> -->
+            <ul class="lista__principal">
+                <li class="lista__individual"><a href="../index.html">INICIO</a></li>
+                <li class="lista__individual"><a href="../pages/servicios.html">SERVICIOS</a></li>
+                <li class="lista__individual"><a href="../pages/clientes.html">CLIENTES</a></li>
+                <li class="lista__individual"><a href="../pages/notas-de-interes.html">NOTAS</a></li>
+                <li class="lista__individual"><a href="#">CONTACTO</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo_principal">Contacto</h1>
+        <section class="form_contacto">
+            <h2>Responderemos en Breve</h2>
+            <form class="formulario" action="procesar.php" name="contacto" method="post">
+                <fieldset class="formulario--fieldset">
+                    <!-- <legend class="titulo_form">Responderemos en breve</legend> -->
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" placeholder="John" required>
+                    <label>Apellido:</label>
+                    <input type="text" name="apellido" placeholder="Doe" required>
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="hola@servidor.com" required>
+                    <!--Radio-->
+                    <h4>Tipo de Consulta:</h4>
+                    <label for="consulta">Servicios
+                    <input type="radio" name="consulta" value="servicios">
+                    </label>
+                    <label for="consulta">Presupuesto
+                    <input type="radio" name="consulta" value="presupuesto">
+                    </label>
+                    <label for="consulta">Otro
+                    <input type="radio" name="consulta" value="otro">
+                    </label>
+                    <!--Checkbox-->
+                    <h4>Desea Recibir el NewsLetter?</h4>
+                        <label for="newsletter">Si
+                        <input type="checkbox" name="newsletter" value="Si">
+                        </label>
+                    <!--Menu desplegable-->
+                    <h4>Localidad</h4>
+                    <select name="accesorios">
+                        <option value="CABA">CABA</option>
+                        <option value="GBA">GBA</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <!--Comentario-->
+                    <h4>Dejános tu comentario y/o consulta:</h4>
+                    <textarea name="comentario" id="" cols="70" rows="20"></textarea>
+                    <!--Botones-->
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpiar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="pie">
+            <div class="items item1">
+            Datos de Contacto    
+            </div>
+            <div class="items item2">
+            Whatsapp +5491112345678
+            <img src="../assets/icons/wa.png" alt="logo_wa">
+            </div>
+            <div class="items item3">
+            Mail: <a href="mailto:tec@soluciones.com">tec@soluciones.com</a>
+            <img src="../assets/icons/email.jpeg" alt="logo_mail"> 
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
+</html>
