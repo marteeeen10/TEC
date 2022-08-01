@@ -128,6 +128,25 @@ a:hover {
     width: 350px;
     height: 350px;
 }
+/* Animaciones */
+.galeria__container--img{
+    animation-name: anima;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 2;
+}
+@keyframes anima {
+    0%{
+        transform: scale(.2);
+        border-radius: 100%;
+    }
+    50%{
+        transform: scale(0.6);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 
 /* Servicios */
 .article_container {
