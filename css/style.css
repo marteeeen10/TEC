@@ -14,7 +14,6 @@
     padding: 20px;
     align-items: center;
     font-size: 30px;
-
 }
 .lista__principal {
     display: flex;
@@ -28,7 +27,8 @@
 }
 
 body {
-    background-image: url("../assets/backgrounds/istockphoto-1295981400-1024x1024.jpg");
+    /* background-image: url("../assets/backgrounds/istockphoto-1295981400-1024x1024.jpg"); */
+    background-color: #242F40;
     background-repeat: no-repeat;
     background-position: center;
     background-size: COVER;
@@ -235,6 +235,17 @@ h2{
 }
 .item3{
     grid-area: mail;
+}
+.navbar {
+    background-color: #242F40;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: chartreuse;
+    font-size: 30px;
+}
+.navbar-collapse {
+    justify-content: flex-end;
 }
 
 /* moBil */
