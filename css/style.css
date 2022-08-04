@@ -199,6 +199,11 @@ article p {
     font-size: 1.2rem;
     border-radius: 5px;
 }
+.formulario2--fieldset{
+    background-color: rgb(15, 85, 62);
+    border: 2px solid black;
+}
+
 h2{
     color: white;
     font-size: 30px;
@@ -246,6 +251,12 @@ h2{
 }
 .navbar-collapse {
     justify-content: flex-end;
+}
+.form-label{
+    color: white;
+}
+.form-check-label{
+    color: white;
 }
 
 /* moBil */
