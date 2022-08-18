@@ -1,28 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
 @import "colores";
 
-
-
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
 
+@mixin dis($display, $justify){
+    display: $display;
+    justify-content: $justify;
+}
+
+$estilos: (
+    fondo: #242F40,
+    blanco: white,
+    negro: #000,
+);
+
 .cabecera {
-    background-color: #242F40;
-    display: flex;
+    @include dis(flex, center);
+    background-color: map-get($estilos, fondo);
     flex-direction: row;
-    justify-content: center;
     padding: 20px;
     align-items: center;
     font-size: 30px;
 }
 .lista__principal {
-    display: flex;
+    @include dis(flex, space-between);
     list-style-type: none;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .lista__individual {
     border: 3px solid rgb(50, 88, 48);
@@ -30,9 +37,7 @@ box-sizing: border-box;
 }
 
 body {
-    /* background-image: url("../assets/backgrounds/istockphoto-1295981400-1024x1024.jpg"); */
     background-color: $colorfondo;
-    // background-color: #242F40;
     background-repeat: no-repeat;
     background-position: center;
     background-size: COVER;
@@ -43,26 +48,8 @@ body {
     letter-spacing: 5px;
     margin-bottom: 100px;
     margin-top: 50px;
-    color: white;
+    color: map-get($estilos, blanco);
 }
-/* .pagina_textoprincipal {
-    display: flex; */
-    /* flex-wrap: wrap; */
-    /* align-items: center;
-}
-.texto_principal {
-    font-size: 22px;
-    letter-spacing: 2px;
-    word-spacing: 10px;
-    text-align: justify;
-    color: white;
-}
-#imagen_principal {
-    border: 15px solid;
-    opacity: 0.9 ;
-    padding: 5px;
-    margin: 30px;
-} */
 
 .pagina_textoprincipal {
     display: flex;
@@ -75,7 +62,6 @@ body {
     line-height: 2;
     color: white;
 }
-
 .boton {
     font-size: 25px;
     margin-left: 200px;
@@ -108,12 +94,7 @@ a:hover {
     background-color: blueviolet;
     color: white;
 }
-/* .imagenes_clientes {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-} */
+
 .video {
     display: block;
     margin-left: auto;
@@ -160,7 +141,7 @@ a:hover {
     display: flex;
 }
 .article_info-b {
-    display: flex;
+    @extend .article_info-a;
 }
 article p {
     font-size: 1.5rem;

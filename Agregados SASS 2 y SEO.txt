@@ -1,0 +1,11 @@
+SassII:
+
+
+- Se agrego un @mixin con el display y el justify content.
+- se agrego un @extend en el article_info-b
+- Se agrego un map con una paleta de colores.
+
+SEO:
+- Se modificaron los titulos de las paginas para que sean unicos.
+- Se agregaron la meta con las "descripciones" en cada pagina.
+- Se agregaron la meta con las "keywords" en cada pagina.
