@@ -265,6 +265,16 @@ h2 {
   color: white;
 }
 
+@media only screen and (max-width: 768px) {
+  .pagina_textoprincipal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pagina_textoprincipal img {
+    width: 50%;
+  }
+}
 /* moBil */
 @media only screen and (max-width: 320px) {
   /* estilos generales */
@@ -299,6 +309,9 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .pagina_textoprincipal img {
+    width: 50%;
   }
   .article_info-a, .article_info-b {
     flex-direction: column;
